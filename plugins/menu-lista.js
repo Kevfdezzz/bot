@@ -26,17 +26,7 @@ let pareja = global.db.data.users[m.sender].pasangan
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
 const sections = [{
-title: comienzo + ' ' + lenguajeGB['smsLista1']() + ' ' + fin,
-rows: [
-{title: lenguajeGB['smsLista2'](), rowId: `${usedPrefix}creadora`},
-{title: lenguajeGB['smsLista3'](), rowId: `${usedPrefix}donar`},
-{title: lenguajeGB['smsLista4'](), rowId: `${usedPrefix}ping`},
-{title: lenguajeGB['smsLista5'](), rowId: `${usedPrefix}infomenu`},
-{title: lenguajeGB['smsLista6'](), rowId: `${usedPrefix}allmenu`},
-{title: lenguajeGB['smsLista7'](), rowId: `${usedPrefix}instalarbot`},
-{title: lenguajeGB['smsLista8'](), rowId: `${usedPrefix}serbot`},
-{title: lenguajeGB['smsLista9'](), rowId: `${usedPrefix}términos`, description: '\n'}
-]},{
+
 title: comienzo + ' ' + lenguajeGB['smsLista10']() + ' ' + fin,
 rows: [
 {title: lenguajeGB['smsLista11'](), rowId: `${usedPrefix}top`},
